@@ -1,0 +1,44 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="电子路考仪.Page3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="img/绿色.jpg" Opacity="0.8"/>
+        </Grid.Background>
+        <StackPanel>
+            <TextBlock FontSize="100">
+            	<Run Text=" "/>
+            	<Run Text="关于"/>
+            </TextBlock >
+            <TextBlock  TextWrapping="Wrap" Margin="10,50" FontSize="30" >
+                <Run Text="    本软件旨在为考驾照的童鞋们提供一些帮助，仅限交流、参考、学习使用，不对结果负责。"/>
+            	<LineBreak/>
+            	<Run Text="    ps：原谅我的渣美工吧，我以后业余时间一定好好地学习UI设计。"/>
+            	<LineBreak/>
+            	<Run Text="    祝大家早日通过考试，取得驾照。"/>
+
+
+            </TextBlock>
+            <TextBlock Text="版本：1.3" FontSize="30" Margin="10">
+                
+            </TextBlock>
+            <TextBlock Text="意见反馈：tashaxing123@163.com" FontSize="30" Margin="10">
+
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+
+</phone:PhoneApplicationPage>

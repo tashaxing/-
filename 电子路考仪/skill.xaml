@@ -1,0 +1,73 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="电子路考仪.Page5"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+    <Grid x:Name="LayoutRoot" >
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="img/紫水.jpg" Opacity="0.8" />
+        </Grid.Background>
+        <StackPanel>
+            <TextBlock FontSize="100">
+            	<Run Text=" "/>
+            	<Run Text="考试技巧"/>
+            </TextBlock>
+        </StackPanel>
+        
+            <ScrollViewer Margin="0,132,0,10">
+            <StackPanel>
+                <TextBlock Height="169" TextWrapping="Wrap" Text="驾驶员考试科目三为路考，主要考察驾驶员起步操作，方向灯和方向盘的掌握情况，应对各种紧急情况和靠边停车技巧等。由于科目三是必考科目，而且对以后的驾驶特别有帮助，所以学员一定要好好练习，掌握扎实。" Foreground="#FFE2FF00" FontSize="24"/>
+                <Image x:Name="car" Source="img/car.jpg" Height="271" Margin="0,0,0,0" Stretch="Fill" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Width="391.218">
+                   
+                </Image>
+
+                <TextBlock TextWrapping="Wrap" Height="1350">
+                	<Run Text="步骤："/>
+                	<Run/>
+                	<LineBreak/>
+                	<Run Text="1."/>
+                	<Run Text="从车右后方绕过车头到达驾驶室外，在绕行的过程中要注意观察轮胎情况，和车前后是否有障碍。到达驾驶室车门外大声喊报告，允许后开门进入驾驶室。向考官问好，呈递身份证:考官你好，我是某某某，同时眼睛要盯着车右上角的监考2,3秒钟，在考官检查身份证的同时调整座位，系好安全带。"/>
+                	<LineBreak/>
+                    <LineBreak/>
+                	<Run Text="2.打报告词。先后观察左右后视镜和仪表盘，头要转动，让考官感觉到你确实在看，然后打报告词：报告考官，仪表正常，左右无障碍，请求起步。得到考官同意便可准备起步了。"/>
+                	<LineBreak/>
+                    <LineBreak/>
+                	<Run Text="3.起步有固定步骤和顺序，这个一定要熟练操作。打左方向灯，鸣两下喇叭，然后踏下离合器踏板，挂档至一档位置，轻抬离合器踏板，慢踩油门，往左打方向盘，同时放下驻车制动器，平稳起步。起步平稳很重要，很多人突然踩油门，使车猛地开出或者干脆熄火，这样都会影响考试成绩的。"/>
+                	<LineBreak/>
+                    <LineBreak/>
+                	<Run Text="4.车子起步平稳，车身正了以后把方向灯回过来，如果方向盘转幅比较大的话，方向灯会自动回到原位，这时候就要换挡了：左脚快速踏下离合器踏板，右脚抬起，左手紧握方向盘，右手将档位拉至二档的位置，缓慢抬起左脚，右脚轻踩油门，加速驾驶。"/>
+                	<LineBreak/>
+                    <LineBreak/>
+                	<Run Text="5.依照上面步骤换挡，一直依次换到五档，千万不能越档换挡的，直至加档结束，但是要控制车速不能太快。我们这里路考的时候要求速度不能超过50千米每小时的，各地规定可能不一样吧，但是肯定是不能超速驾驶的。"/>
+                	<LineBreak/>
+                    <LineBreak/>
+                	<Run Text="6.在换挡的时候左手一定要紧握方向盘，不能跑偏方向，否则也会影响成绩的，换挡结束，平稳驾驶一会，眼睛要不停地看左右后视镜，注意路况。开到一定距离之后，考官觉得没问题，便会发出指令：靠边停车。"/>
+                	<LineBreak/>
+                    <LineBreak/>
+                	<Run Text="7.停车步骤。在听到指令后，先观察右后视镜，发现无停车障碍后，打右方向灯，同时右脚松开油门踏板，移至刹车踏板轻踏。往右打方向盘，车子慢慢靠右减速。等到车子要抖动的时候，迅速踏下离合器踏板。"/>
+                	<LineBreak/>
+                    <LineBreak/>
+                	<Run Text="8.让车子缓慢滑行一段，直到车身平行于路边，并且与路边距离大约是20厘米时，果断踏下刹车踏板，平稳停车。得到考官示意后，礼貌地谢谢考官，解开安全带，准备下车。"/>
+                	<LineBreak/>
+                    <LineBreak/>
+                	<Run Text="9.下车之前会得知自己的成绩，并且要求在成绩单上签名，这样考试就结束了，下车之前不要忘记取走自己的身份证，下车关好车门，不要用太大的力。"/>
+                	<LineBreak/>
+                	
+                </TextBlock>
+           
+        </StackPanel>
+        </ScrollViewer>
+    </Grid>
+
+</phone:PhoneApplicationPage>

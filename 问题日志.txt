@@ -1,0 +1,8 @@
+9.11
+1.图片必须是resource，否则通过不了商店测试
+2.本页的按钮只能控制本页的背景变动
+3.图片路径前不加/，如/img/蓝色.jpg，应该是img.jpg，否则图片无法显示
+4.调试PhoneApp的时候出现部署错误，异常来自HRESULT：0x89721500，不知道怎么解决，首次使用就遇到这个问题了。。。
+   deleting this folder "C:\Users\<username>\AppData\Local    \Microsoft\Phone Tools\CoreCon\11.0"
+
+    Then open VS2012 again.

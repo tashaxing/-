@@ -1,0 +1,113 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="电子路考仪.Page1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="img/风景1.jpg"/>
+        </Grid.Background>
+        <MediaElement x:Name="sound" />
+        <StackPanel>
+            <TextBlock x:Name="tip" Height="100" Margin="20,20" TextWrapping="Wrap" FontSize="22" Foreground="#FFEEFF00"/>
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <Button Width="240" Content="模拟灯光操作一" Height="100" Click="l1">
+                        
+                    </Button>
+                    <Button Width="240" Content="模拟灯光操作二" Click="l2">
+
+                    </Button>
+                  
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Width="240" Content="模拟灯光操作三" Height="100" Click="l3">
+
+                    </Button>
+                    <Button Width="240" Content="模拟灯光操作四" Click="l4">
+
+                    </Button>
+
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" >
+                    <Button Width="120" Height="110" Content="起步" Click="qibu">
+
+                    </Button>
+                    <Button Width="120" Background="#B20040FF" Height="110" Click="zhi">
+                        <TextBlock TextWrapping="Wrap" Text="直线行驶"/>
+
+                    </Button>
+                    <Button Width="120" Background="#B20040FF" Click="jieshu">
+                        <TextBlock TextWrapping="Wrap" Text="结束直行"/>
+
+                    </Button>
+                    <Button Width="120" Content="超车" Background="#B20040FF" Click="chaoche">
+
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Width="120" Content="左转" Background="#B20040FF" Height="110" Click="zuo">
+
+                    </Button>
+                    <Button Width="120" Content="掉头" Background="#B20040FF" Click="diaotou">
+
+                    </Button>
+                    <Button Width="120" Content="右转" Background="#B20040FF" Click="you">
+
+                    </Button>
+                    <Button Width="120" Background="#B20040FF" Click="biandao">
+                        <TextBlock TextWrapping="Wrap" Text="变更车道"/>
+
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Width="120" Background="#B20040FF" Height="110" Click="lukou">
+                        <TextBlock TextWrapping="Wrap" Text="前方路口"/>
+
+                    </Button>
+                    <Button Width="120" Background="#B20040FF" Click="bus">
+                        <TextBlock TextWrapping="Wrap" Text="公交车站"/>
+
+                    </Button>
+                    <Button Width="120" Background="#B20040FF" Click="school">
+                        <TextBlock TextWrapping="Wrap" Text="学校区域"/>
+
+                    </Button>
+                    <Button Width="120" Background="#B20040FF" Click="ren">
+                        <TextBlock TextWrapping="Wrap" Text="人行横道" />
+
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Width="120" Background="#B20040FF" Height="110" Click="tingche">
+                        <TextBlock TextWrapping="Wrap" Text="靠边停车"/>
+
+                    </Button>
+                    <Button Width="120" Background="#B20040FF" Click="schoolbus">
+                        <TextBlock TextWrapping="Wrap" Text="学校-公交站" FontSize="23"/>
+
+                    </Button>
+                    <Button Width="120" Background="#B20040FF" Click="slow">
+                        <TextBlock TextWrapping="Wrap" Text="减速路段"/>
+
+                    </Button>
+                    <Button Width="120" Content="RESET" Background="#B2FF001D" Click="reset">
+
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+
+</phone:PhoneApplicationPage>

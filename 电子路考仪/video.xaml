@@ -1,0 +1,80 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="电子路考仪.video"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="img/视频.jpg" Opacity="0.67"/>
+        </Grid.Background>
+        <StackPanel>
+            <TextBlock FontSize="100">
+            	<Run Text=" "/>
+            	<Run Text="视频教程"/>
+            </TextBlock>
+        </StackPanel>
+        <ScrollViewer Margin="0,132,0,10">
+            <StackPanel>
+                <TextBlock Height="163" TextWrapping="Wrap" Foreground="Beige" FontSize="24">
+            	<Run Text="由于wp8应用内嵌视频会使安装包体积过大，因此，在这里提供两段科目三的教程视频百度网盘外链。但是百度网盘网页暂时没有支持html5，所以只能下载下来观看。"/>
+            	<Run Text="以后如果能找到更好的流媒体源我再补上。"/>
+                </TextBlock>
+                <Button Width="300" Height="100" Content="（外链）科目三视频1" Click="btnvideo1">
+                </Button>
+                <Button Width="300" Height="100" Content="（外链）科目三视频2" Click="btnvideo2">
+                </Button>
+                <TextBlock Text="以下路考各路段示意图" FontSize="32" Foreground="#FFE2FF00"/>
+
+                <TextBlock Text="1.起点" FontSize="28"/>
+                <Image x:Name="qidian" Source="img2/起点.jpg" Height="310" Margin="0,0,0,0" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="450"/>
+
+                <TextBlock Text="2.变更车道" FontSize="28"/>
+                <Image x:Name="biangengchedao" Source="img2/变更车道.jpg" Height="310" Margin="0,0,0,0" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="450"/>
+
+                <TextBlock Text="3.变更车道不合格" FontSize="28"/>
+                <Image x:Name="biangengchedaobuhege" Source="img2/变更车道不合格.jpg" Height="310" Margin="0,0,0,0" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="450"/>
+
+                <TextBlock Text="4.路口" FontSize="28"/>
+                <Image x:Name="lukou" Source="img2/路口.jpg" Height="310" Margin="0,0,0,0" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="450"/>
+
+                <TextBlock Text="5.公交站" FontSize="28"/>
+                <Image x:Name="gongjiaozhan" Source="img2/公交站.jpg" Height="310" Margin="0,0,0,0" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="450"/>
+
+                <TextBlock Text="6.直线路段" FontSize="28"/>
+                <Image x:Name="zhixianluduan" Source="img2/直线路段.jpg" Height="310" Margin="0,0,0,0" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="450"/>
+
+                <TextBlock Text="7.右转" FontSize="28"/>
+                <Image x:Name="youzhuan" Source="img2/右转.jpg" Height="310" Margin="0,0,0,0" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="450"/>
+
+                <TextBlock Text="8.学校区域" FontSize="28"/>
+                <Image x:Name="xuexiaoquyu" Source="img2/学校区域.jpg" Height="310" Margin="0,0,0,0" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="450"/>
+
+                <TextBlock Text="9.人行横道路段" FontSize="28"/>
+                <Image x:Name="renxinghengdaoluduan" Source="img2/人行横道路段.jpg" Height="310" Margin="0,0,0,0" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="450"/>
+
+                <TextBlock Text="10.调头" FontSize="28"/>
+                <Image x:Name="diaotou" Source="img2/调头.jpg" Height="310" Margin="0,0,0,0" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="450"/>
+
+                <TextBlock Text="11.靠边停车" FontSize="28"/>
+                <Image x:Name="kaobiantingche" Source="img2/靠边停车.jpg" Height="310" Margin="0,0,0,0" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="450"/>
+
+                <TextBlock Text="12.靠边停车不合格" FontSize="28"/>
+                <Image x:Name="kaobianbuhege" Source="img2/停车不合格.jpg" Height="310" Margin="0,0,0,0" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="450"/>
+
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,198 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls" 
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    x:Class="电子路考仪.MainPage"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:SwivelTransition Mode="FullScreenIn"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:SwivelTransition Mode="FullScreenOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <controls:Panorama x:Name="my_panorama">
+            <controls:Panorama.Background>
+                <ImageBrush ImageSource="img/公路2.jpg" Stretch="UniformToFill"/>
+            </controls:Panorama.Background>
+            <controls:Panorama.Title>
+                <TextBlock Margin="0,55,0,0" Foreground="#FF11FF00" Text="电子路考语音模拟系统" FontSize="107" FontFamily="Segoe WP Light" />
+            </controls:Panorama.Title>
+            <controls:PanoramaItem Header="语音模拟">
+                <StackPanel>
+                    <Button Height="200" Background="#B20058FF" BorderBrush="{x:Null}" Click="btnplay" >
+                        <TextBlock TextWrapping="Wrap" Foreground="#FFFFF800" FontSize="40">
+                        	<Run Text="夜间灯光操作+实时语音"/>
+                        	<Run Text="提示"/>
+                        	<Run FontSize="20" Text="（"/>
+                        	<Run FontSize="24" Text="点击进入">
+                        		<Run.Foreground>
+                        			<SolidColorBrush Color="#FFFF2800">
+                        				<SolidColorBrush.RelativeTransform>
+                        					<MatrixTransform Matrix="Identity"/>
+                        				</SolidColorBrush.RelativeTransform>
+                        				<SolidColorBrush.Transform>
+                        					<MatrixTransform Matrix="Identity"/>
+                        				</SolidColorBrush.Transform>
+                        			</SolidColorBrush>
+                        		</Run.Foreground>
+                        	</Run>
+                        	<Run FontSize="20" Text="）"/>
+                        </TextBlock>
+                    </Button>
+                    <Button Height="200" Background="#B2FF0006" BorderBrush="{x:Null}" Click="btnskill" >
+                        <TextBlock TextWrapping="Wrap" Foreground="#FFFFF800" FontSize="40">
+                    		<Run Text="科目三考试技巧"/>
+                    		<Run FontSize="20"/>
+                    		<LineBreak/>
+                    		<Run FontSize="20" Text="（"/>
+                    		<Run FontSize="24" Text="点击进入">
+                    			<Run.Foreground>
+                    				<SolidColorBrush Color="#FF00FFD7">
+                    					<SolidColorBrush.RelativeTransform>
+                    						<MatrixTransform Matrix="Identity"/>
+                    					</SolidColorBrush.RelativeTransform>
+                    					<SolidColorBrush.Transform>
+                    						<MatrixTransform Matrix="Identity"/>
+                    					</SolidColorBrush.Transform>
+                    				</SolidColorBrush>
+                    			</Run.Foreground>
+                    		</Run>
+                    		<Run FontSize="20" Text="）"/>
+                        </TextBlock>
+                    </Button>
+
+                    
+
+                </StackPanel>
+            </controls:PanoramaItem>
+            <controls:PanoramaItem Header="科目三内容">
+                <StackPanel>
+                    <Button Height="200" BorderBrush="{x:Null}" Background="#B2FF00D6" Click="btntxt">
+                        <TextBlock TextWrapping="Wrap" FontSize="40" Foreground="#FFE2FF00">
+                        	<Run Text="路考测试内容+考试注意事项"/>
+                        	<Run FontSize="24" Text="（"/>
+                        	<Run FontSize="24" Text="点击进入">
+                        		<Run.Foreground>
+                        			<SolidColorBrush Color="#FF06FF00">
+                        				<SolidColorBrush.RelativeTransform>
+                        					<MatrixTransform Matrix="Identity"/>
+                        				</SolidColorBrush.RelativeTransform>
+                        				<SolidColorBrush.Transform>
+                        					<MatrixTransform Matrix="Identity"/>
+                        				</SolidColorBrush.Transform>
+                        			</SolidColorBrush>
+                        		</Run.Foreground>
+                        	</Run>
+                        	<Run FontSize="24" Text="）"/>
+                        </TextBlock>
+                    </Button>
+                    <ScrollViewer Height="320">
+                        <TextBlock TextWrapping="Wrap" Height="900" Width="395">
+                    		<Run Text="    2013年公安部关于科目三的最新规定"/>
+                    		<LineBreak/>
+                    		<Run Text="一、全程计算机评判，指令全部自动发送；"/>
+                    		<LineBreak/>
+                    		<Run Text="二、监考考试员制度取消，副驾驶只有安全员；"/>
+                    		<LineBreak/>
+                    		<Run Text="三、除夜考考生外，白天考生全部模拟夜考（白天要开启大灯，必须近光灯，如果是远光灯"/>
+                    		
+                    		<Run Text="视为不合格）"/>
+                    		<LineBreak/>
+                    		<Run Text="四、考试距离要求3公里，未达到规定距离不能结束；"/>
+                    		<LineBreak/>
+                    		<Run Text="五、项目增至16项，分别为：上车准备、起步、变更车道、通过人行横道、直行通过路口、超车、掉头、直线行驶、左转弯通过路口、通过学校区域、通过公交站台、会车、加减档操作、夜考、靠边停车；项目间隔20米"/>
+                    		<LineBreak/>
+                    		<Run Text="六、开始考试在比对后出发；"/>
+                    		<LineBreak/>
+                    		<Run Text="七、直线行驶不要求必须达到四档（40码以上），而是要求在全程内必须有达到四档（40码以上）的操作；方向控制不稳以车辆行驶方向偏差角度超过10度起判；"/>
+                    		<LineBreak/>
+                    		<Run Text="八、要求1挡连续行驶不得超过100米，2挡连续行驶不得超过200米；1挡与2挡行驶路程总和不超500米；"/>
+                    		<LineBreak/>
+                    		<Run Text="九、要求在指令发出后至项目前（50米）内进行边等、观察、减速（刹车）；通过本项目速度不得超过30码；"/>
+                    		<LineBreak/>
+                    		<Run Text="十、加减档操作不单独发指令，根据全程实际换挡情况作出判断；"/>
+                    		<LineBreak/>
+                    		<Run Text="十一、要求驾驶员结合实际情况进行变道；"/>
+                    		<LineBreak/>
+                    		<Run Text="十二、达到3公里，靠边停车指令发出，结束考试"/>
+                        </TextBlock>
+                    </ScrollViewer>
+                </StackPanel>
+            </controls:PanoramaItem>
+            <controls:PanoramaItem Header="视频教程">
+                <StackPanel>
+                    <Button Height="200" Background="#B2F9FF00" Content="视频" FontSize="72" Click="btnvideo" BorderBrush="{x:Null}" Foreground="#FF0007FF"/>
+                </StackPanel>
+            </controls:PanoramaItem>
+            <controls:PanoramaItem Header="更多">
+                <StackPanel>
+                    <Button Height="90" BorderBrush="{x:Null}" Click="btnabout" Width="130">
+                        <TextBlock TextWrapping="Wrap" Text="关于" FontSize="40"/>
+
+                    </Button>
+                   
+                    <Button Height="90" BorderBrush="{x:Null}" Click="btnhelp" Width="130" Margin="0,30">
+                        <TextBlock TextWrapping="Wrap" Text="帮助" FontSize="40"/>
+
+                    </Button>
+                    <Button Height="90" BorderBrush="{x:Null}" Click="btngood" Width="340" Margin="0,0">
+                        <TextBlock TextWrapping="Wrap" Text="亲，给个好评吧" FontSize="40"/>
+
+                    </Button>
+                </StackPanel>
+            </controls:PanoramaItem>
+            <controls:PanoramaItem Header="更换主题">
+                <ScrollViewer Margin="0,0,0,-57">
+                    <StackPanel>
+                    <TextBlock Text="主界面" FontSize="50" Foreground="#FF11FF00">                  
+                    </TextBlock>
+                        <Button x:Name="danlv" Height="157" Content="淡绿" Foreground="#FFF9FF00" Click="btngreen">
+                            <Button.Background>
+                                <ImageBrush ImageSource="img/淡绿.jpg"/>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="梦幻" Height="157" Content="梦幻" Foreground="#FFF9FF00" Click="btnblue">
+                            <Button.Background>
+                                <ImageBrush Stretch="Fill" ImageSource="img/纯蓝.jpg"/>
+                            </Button.Background>
+
+                        </Button>
+                        <Button Height="157" Content="公路（默认）" Foreground="#FFF9FF00" Click="btnroad">
+                            <Button.Background>
+                                <ImageBrush Stretch="Fill" ImageSource="img/公路2.jpg"/>
+                            </Button.Background>
+
+                        </Button>
+                    </StackPanel>
+                </ScrollViewer>
+            </controls:PanoramaItem>
+        </controls:Panorama>
+        
+    </Grid>
+
+</phone:PhoneApplicationPage>

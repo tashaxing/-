@@ -1,0 +1,445 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    x:Class="电子路考仪.Page2"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        
+        <controls:Pivot Title="路考内容+注意事项" FontSize="48">
+            <controls:Pivot.Background>
+                <ImageBrush ImageSource="img/桥梁1.jpg" Opacity="0.7"/>
+            </controls:Pivot.Background>
+            <controls:PivotItem Header="上车准备" >
+                <TextBlock Height="602" TextWrapping="Wrap" Width="456" FontSize="27">
+            		<Run Text="1.绕车一周，观察车辆外观和周围"/>
+            		<Run Text="环"/>
+            		<Run Text="境，确认安全。"/>
+            		<LineBreak/>
+            		<Run Text="2.打开车门前应观察后方交通情况。"/>
+            		<LineBreak/>
+            		<Run Text="3.前后2个学员上车要间隔20秒上车。 "/>
+                </TextBlock>
+
+            </controls:PivotItem>
+            <controls:PivotItem Header="起步">
+                <ScrollViewer>
+                <TextBlock Height="617" TextWrapping="Wrap" Width="456" FontSize="27" >
+                	<Span>
+                		<Run Text="1.上车后关闭车门，并调整驾驶座椅、后视镜、检查仪表盘；"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="2.开始考试后，若发动机未启动，车载语音提示“请启动发动机”"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="3.发动机启动后，车载语音提示“下面将进行模拟夜间行驶场景灯光使用的考试，请按语音指示在5秒内做出相应的灯光操作”。考试应按语音指令及时打开对应的灯光。模拟结束后，车载语音提示“模拟夜间考试结束，请关闭所有灯光，请起步继续完成考试”。"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="4.起步前，应通过后视镜并向左方侧头，观察左后方交通情况；"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="5.起步前应按喇叭；打开左转向灯，等待3秒后起步；"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="6.挂一档，慢松离合器到半联动状态时，轻加油门然后松驻车制动器。"/>
+                	</Span>
+                	<LineBreak/>
+                	<Run/>
+
+
+                </TextBlock>
+                </ScrollViewer>
+            </controls:PivotItem>
+            <controls:PivotItem Header="变更车道">
+                <TextBlock Height="602" TextWrapping="Wrap" Width="456" FontSize="27">
+                	<Span>
+                		<Run Text="1.行驶过程中，当听到车载语音提示“请变更车道”，考生应进行以下操作"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="2.开转向灯，通过内、外后视镜观察后方道路交通情况；等待3秒后进行变更车道；"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="3.听到语音提示后应在150米内完成变更车道，变道时不能连续变更两条车道。"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="4.不能急打方向盘。否则判争道抢行，妨碍其他车辆正常行驶。-100分"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="5.另外现在的系统是差分模式，凡是在有道路分界线的情况下，变道都要打方向灯。"/>
+                	</Span>
+                	<LineBreak/>
+                	<Run/>
+
+                </TextBlock>
+            </controls:PivotItem>
+            <controls:PivotItem Header="通过路口">
+                <TextBlock Height="602" TextWrapping="Wrap" Width="456" FontSize="27">
+                	<Span>
+                		<Run Text="1.通过路口前，车载语音将自动提示车辆行驶方向（不是所有路口都有注意提示）。"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="2.考生应按车道导向箭头指示选择合适车道行驶，并按照交通信号灯行驶；"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="3.通过路口停车线前，应有减速动作或将车速控制在25km/h以下；"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="4.直行通过路口时应观察左、右方交通情况；在路口转弯时，应提前3秒开启转向灯；"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="5.左转通过路口时，应靠路口中心点左侧转弯"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="6.不得将车辆停在路口内。"/>
+                	</Span>
+                	<LineBreak/>
+                	<Run/>
+
+                </TextBlock>
+            </controls:PivotItem>
+            <controls:PivotItem Header="过人行道">
+                <TextBlock Height="602" TextWrapping="Wrap" Width="456" FontSize="27">
+                	<Span>
+                		<Run Text="1.通过人行横道前应观察左右方交通情况；"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="2.如遇行人通过人行横道时，应在人行横道线前停车让行"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="3.通过人行横道前应有减速动作或将车速控制在30km/h以下"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="4.人行横道线上不得停车"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="5.夜间考试通过人行横道前，需交替使用远、近光灯示意"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="6.不得把车辆停在人行横道线内   "/>
+                	</Span>
+                	<LineBreak/>
+                	<Run/>
+
+                </TextBlock>
+            </controls:PivotItem>
+            <controls:PivotItem Header="通过学校">
+                <TextBlock Height="602" TextWrapping="Wrap" Width="456" FontSize="27">
+                	<Span>
+                		<Run Text="1.通过学校区域前应观察左右方交通情况；"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="2.通过学校区域前应有减速动作或将车速控制在30km/h以下"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="3.不能把车辆停在网状线内"/>
+                	</Span>
+                	<LineBreak/>
+                	<Run/>
+
+                </TextBlock>
+            </controls:PivotItem>
+            <controls:PivotItem Header="过公交站">
+                <TextBlock Height="602" TextWrapping="Wrap" Width="456" FontSize="27">
+                	<Span>
+                		<Run Text="1.通过公共汽车站前应观察左右方交通情况"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="2.通过公共汽车站前应有减速动作或将车速控制在30km/h以下"/>
+                	</Span>
+                	<LineBreak/>
+                	<Run/>
+
+                </TextBlock>
+            </controls:PivotItem>
+            <controls:PivotItem Header="超车">
+                <ScrollViewer>
+                    <TextBlock Height="615" TextWrapping="Wrap" Width="456" FontSize="27">
+                    	<Span>
+                    		<Run Text="1.行驶过程中，当听到车载语音提示“请超越前方车辆”，考生应进行以下操作"/>
+                    	</Span>
+                    	<LineBreak/>
+                    	<Span>
+                    		<Run Text="2.通过内、外后视镜观察后方和左侧交通情况"/>
+                    	</Span>
+                    	<LineBreak/>
+                    	<Span>
+                    		<Run Text="3.选择合理的超车时机，不得影响其他车辆正常行驶"/>
+                    	</Span>
+                    	<LineBreak/>
+                    	<Span>
+                    		<Run Text="4.开左转向灯等待3秒后进行从左侧超车；"/>
+                    	</Span>
+                    	<LineBreak/>
+                    	<Span>
+                    		<Run Text="5. 超车时应与被超越车保持安全距离。"/>
+                    	</Span>
+                    	<LineBreak/>
+                    	<Span>
+                    		<Run Text="6.超车后不得急转向驶回本车道，妨碍被超越车正常行驶；"/>
+                    	</Span>
+                    	<LineBreak/>
+                    	<Span>
+                    		<Run Text="7.当听到语音指令后，应在25秒内完成超车"/>
+                    	</Span>
+                    	<LineBreak/>
+                    	<Span>
+                    		<Run Text="8.夜间超车时，应变换使用远、近光灯提醒被超越车辆"/>
+                    	</Span>
+                    	<LineBreak/>
+                    	<Run/>
+
+                    </TextBlock>
+                </ScrollViewer>
+            </controls:PivotItem>
+            <controls:PivotItem Header="靠边停车">
+                <TextBlock Height="602" TextWrapping="Wrap" Width="456" FontSize="27">
+                	<Span>
+                		<Run Text="1.行驶过程中，当听到车载语音提示“请靠边停车”考生应进行以下操作"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="2.开右转向灯，并通过内、外后视镜观察后方和右侧交通情况，开启转向灯3秒后方可转向；"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="3.停车制动时，应平缓顺畅；"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="4.停车后车身靠右侧路边缘线不能超过30厘米，不能压道路边缘线；"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="5.停车后应在放松行车制动踏板前拉紧驻车制动器，松刹车；"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="6.夜间在路边停车后应不关闭前照灯并开启警示灯"/>
+                	</Span>
+                	<LineBreak/>
+                	<Run/>
+
+                </TextBlock>
+            </controls:PivotItem>
+            <controls:PivotItem Header="掉头">
+                <TextBlock Height="602" TextWrapping="Wrap" Width="456" FontSize="27">
+                	<Span>
+                		<Run Text="1.行驶过程中，当听到车载语音提示“前方请选择合适地点掉头”，考生应进行以下操作；"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="2.掉头前开左转向灯，并观察交通情况选择向左掉头时机，开转向灯3秒后方可掉头在200米内完成；"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="3.向左掉头时，不得妨碍正常行驶的其他车辆和行人通行。"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="4.不得在黄实线，禁止掉头的位置掉头。"/>
+                	</Span>
+                	<LineBreak/>
+                	<Run/>
+
+                </TextBlock>
+            </controls:PivotItem>
+            <controls:PivotItem Header="直线行驶">
+                <TextBlock Height="602" TextWrapping="Wrap" Width="456" FontSize="27">
+                	<Span>
+                		<Run Text="1.在行驶过程中，当听到车载语音提示“前方请保持直线行驶”，考生应进行以下操作"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="2.保持车辆直线行驶120米"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="3.车速要达到30到40km/小时"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="4.车辆方向不能变化或抖动。"/>
+                	</Span>
+                	<LineBreak/>
+                	<Run/>
+
+                </TextBlock>
+            </controls:PivotItem>
+            <controls:PivotItem Header="夜间行驶">
+                <TextBlock Height="602" TextWrapping="Wrap" Width="456" FontSize="27">
+                	<Span>
+                		<Run Text="1.夜间考试起步前应开启前照灯"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="2.夜间在通过急弯、坡路、拱桥、人行横道或者没有交通信号灯控制的路口时，应交替使用远、近光灯示意"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="3.夜间在路口转弯时，不得使用远光灯"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="4.夜间在有路灯、照明良好的道路行驶时，不得使用远光灯。"/>
+                	</Span>
+                	<LineBreak/>
+                	<Run/>
+
+                </TextBlock>
+            </controls:PivotItem>
+            <controls:PivotItem Header="夜间灯光">
+                <ScrollViewer>
+                    <TextBlock Height="617" TextWrapping="Wrap" Width="456" FontSize="27">
+                	<Span>
+                		<Run Text="1.夜间通过急弯、坡路、人行横道或没有交通信号灯控制的路口：交替使用远近光灯"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="2.夜间在道路上发生故障或交通事故妨碍"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="3.夜间在道路上发生故障或交通事故妨碍交通又难以移动：大灯改为示宽灯+双跳"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="4.夜间在窄路窄桥与非机动车会车：近光灯"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="5.夜间在没有路灯照明不良条件下行驶：大灯开启"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="6.雾天行驶：雾灯+双跳灯+大灯开启"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="7.在刚才同样条件下紧跟前车行驶：近光灯"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="8.与对方会车，距对方来车将近150米：近光灯"/>
+                	</Span>
+                	<LineBreak/>
+                	<Run/>
+
+                    </TextBlock>
+                </ScrollViewer>
+            </controls:PivotItem>
+            
+            <controls:PivotItem Header="注意">
+                <ScrollViewer>
+                    <TextBlock Height="796" TextWrapping="Wrap" Width="456" FontSize="27">
+                	<Span>
+                		<Run Text="1.不可以高档低速、低档高速行驶"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="2.三档不能低于16km/h"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="3.四档不能低于20 km/h"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="4.五档不能低于25 km/h"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="5.一档不能超过20 km/h"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="6.二档不能超过35km/h"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="7.三档不能超过45 km/h（我们是通过时间和行驶距离来判断）。"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="8.不可以长时间踩离合器行驶，（最长15s）"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="9.不可以长时间开转向灯，不得超过300米"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="10.考试中最少要使用4档或以上档位行驶一段"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="11.考试中要最少要行驶35 km/h一次，并且保持这种状态连续3秒以上"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="12.不能长时间挂1档"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="13.不能长时间挂2档"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="14.不能长时间压道路分界线"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="15.不能压路边缘线"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="16.不能停在网状线或者人行横道斑马线上"/>
+                	</Span>
+                	<LineBreak/>
+                	<Span>
+                		<Run Text="17.路口停车不能超出路口停车线"/>
+                	</Span>
+                	<LineBreak/>
+                	<Run/>
+
+                    </TextBlock>
+                </ScrollViewer>
+            </controls:PivotItem>
+            
+        </controls:Pivot>
+       
+    </Grid>
+    
+   
+</phone:PhoneApplicationPage>
